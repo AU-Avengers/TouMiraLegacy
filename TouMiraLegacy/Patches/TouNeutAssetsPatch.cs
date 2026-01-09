@@ -21,6 +21,21 @@ public static class TouNeutAssetsPatch
         return false;
     }
 
+    [HarmonyPatch(typeof(TouNeutAssets), nameof(TouNeutAssets.VampVentSprite), MethodType.Getter)]
+    [HarmonyPatch(typeof(TouNeutAssets), nameof(TouNeutAssets.ArsoVentSprite), MethodType.Getter)]
+    [HarmonyPatch(typeof(TouNeutAssets), nameof(TouNeutAssets.GlitchVentSprite), MethodType.Getter)]
+    [HarmonyPatch(typeof(TouNeutAssets), nameof(TouNeutAssets.JesterVentSprite), MethodType.Getter)]
+    [HarmonyPatch(typeof(TouNeutAssets), nameof(TouNeutAssets.JuggVentSprite), MethodType.Getter)]
+    [HarmonyPatch(typeof(TouNeutAssets), nameof(TouNeutAssets.PestVentSprite), MethodType.Getter)]
+    [HarmonyPatch(typeof(TouNeutAssets), nameof(TouNeutAssets.ReaperVentSprite), MethodType.Getter)]
+    [HarmonyPatch(typeof(TouNeutAssets), nameof(TouNeutAssets.WerewolfVentSprite), MethodType.Getter)]
+    [HarmonyPrefix]
+    public static bool VentSprite(ref LoadableAsset<Sprite> __result)
+    {
+        __result = LegacyVanillaAssets.VentSprite;
+        return false;
+    }
+
     [HarmonyPatch(typeof(TouNeutAssets), nameof(TouNeutAssets.RememberButtonSprite), MethodType.Getter)]
     [HarmonyPrefix]
     public static bool RememberButtonSprite(ref LoadableAsset<Sprite> __result)

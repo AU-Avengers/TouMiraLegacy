@@ -39,6 +39,7 @@ public static class VanillaAssetsPatch
 
         CustomButtonSingleton<HunterKillButton>.Instance.RemoveLabel();
         CustomButtonSingleton<SheriffShootButton>.Instance.RemoveLabel();
+        CustomButtonSingleton<EngineerVentButton>.Instance.RemoveLabel();
         CustomButtonSingleton<DetectiveInspectButton>.Instance.RemoveLabel();
         CustomButtonSingleton<DetectiveExamineButton>.Instance.RemoveLabel();
         CustomButtonSingleton<WatchButton>.Instance.RemoveLabel();

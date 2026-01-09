@@ -17,6 +17,14 @@ public static class TouAssetsPatch
         return false;
     }
 
+    [HarmonyPatch(typeof(TouAssets), nameof(TouAssets.VentSprite), MethodType.Getter)]
+    [HarmonyPrefix]
+    public static bool VentSprite(ref LoadableAsset<Sprite> __result)
+    {
+        __result = LegacyVanillaAssets.VentSprite;
+        return false;
+    }
+
     [HarmonyPatch(typeof(TouAssets), nameof(TouAssets.AbilityCounterBasicSprite), MethodType.Getter)]
     [HarmonyPatch(typeof(TouAssets), nameof(TouAssets.AbilityCounterBodySprite), MethodType.Getter)]
     [HarmonyPatch(typeof(TouAssets), nameof(TouAssets.AbilityCounterPlayerSprite), MethodType.Getter)]

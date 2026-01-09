@@ -18,6 +18,14 @@ public static class TouCrewAssetsPatch
         return false;
     }
 
+    [HarmonyPatch(typeof(TouCrewAssets), nameof(TouCrewAssets.EngiVentSprite), MethodType.Getter)]
+    [HarmonyPrefix]
+    public static bool VentSprite(ref LoadableAsset<Sprite> __result)
+    {
+        __result = LegacyVanillaAssets.VentSprite;
+        return false;
+    }
+
     [HarmonyPatch(typeof(TouCrewAssets), nameof(TouCrewAssets.InspectSprite), MethodType.Getter)]
     [HarmonyPrefix]
     public static bool InspectSprite(ref LoadableAsset<Sprite> __result)

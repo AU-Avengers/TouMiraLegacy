@@ -26,7 +26,7 @@ public partial class TouMiraLegacyPlugin : BasePlugin, IMiraPlugin
     public static CultureInfo Culture => TownOfUs.TownOfUsPlugin.Culture;
 
     /// <inheritdoc />
-    public string OptionsTitleText => "Mira Legacy";
+    public string OptionsTitleText => "";
 
     /// <summary>
     ///     Determines if the current build is a dev build or not. This will change certain visuals as well as always grab news locally to be up to date.
