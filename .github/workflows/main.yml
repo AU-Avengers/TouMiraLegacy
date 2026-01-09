@@ -32,15 +32,15 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: TouMiraLegacy.dll
-          path: TouMiraLegacy/bin/Release/TouMiraLegacy.dll
+          path: TouMiraLegacy/bin/Release/net6.0/TouMiraLegacy.dll
 
       - uses: actions/upload-artifact@v4
         with:
           name: TouMiraLegacy.nupkg
-          path: TouMiraLegacy/bin/Release/TouMiraLegacy.*.nupkg
+          path: TouMiraLegacy/bin/Release/net6.0/TouMiraLegacy.*.nupkg
 
       - uses: softprops/action-gh-release@v2
         if: github.ref_type == 'tag'
         with:
           draft: true
-          files: TouMiraLegacy/bin/Release/TouMiraLegacy.dll
+          files: TouMiraLegacy/bin/Release/net6.0/TouMiraLegacy.dll
