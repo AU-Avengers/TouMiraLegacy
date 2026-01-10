@@ -17,6 +17,22 @@ public static class TouAssetsPatch
         return false;
     }
 
+    [HarmonyPatch(typeof(TouAssets), nameof(TouAssets.VitalsSprite), MethodType.Getter)]
+    [HarmonyPrefix]
+    public static bool VitalsSprite(ref LoadableAsset<Sprite> __result)
+    {
+        __result = LegacyVanillaAssets.VitalsSprite;
+        return false;
+    }
+
+    [HarmonyPatch(typeof(TouAssets), nameof(TouAssets.CameraSprite), MethodType.Getter)]
+    [HarmonyPrefix]
+    public static bool CameraSprite(ref LoadableAsset<Sprite> __result)
+    {
+        __result = LegacyVanillaAssets.SecuritySprite;
+        return false;
+    }
+
     [HarmonyPatch(typeof(TouAssets), nameof(TouAssets.VentSprite), MethodType.Getter)]
     [HarmonyPrefix]
     public static bool VentSprite(ref LoadableAsset<Sprite> __result)
@@ -56,6 +72,14 @@ public static class TouAssetsPatch
     public static bool DisperseSprite(ref LoadableAsset<Sprite> __result)
     {
         __result = LegacyAssets.DisperseSprite;
+        return false;
+    }
+
+    [HarmonyPatch(typeof(TouAssets), nameof(TouAssets.BarryButtonSprite), MethodType.Getter)]
+    [HarmonyPrefix]
+    public static bool BarryButtonSprite(ref LoadableAsset<Sprite> __result)
+    {
+        __result = LegacyAssets.BarryButtonSprite;
         return false;
     }
 

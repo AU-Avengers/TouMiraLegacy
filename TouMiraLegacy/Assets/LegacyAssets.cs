@@ -16,6 +16,9 @@ public static class LegacyAssets
     public static LoadableAsset<Sprite> DisperseSprite { get; } =
         new LoadableBundleAsset<Sprite>("Disperse", MainBundle);
 
+    public static LoadableAsset<Sprite> BarryButtonSprite { get; } =
+        new LoadableBundleAsset<Sprite>("Button", MainBundle);
+
     public static LoadableAsset<Sprite> HysteriaSprite { get; } =
         new LoadableBundleAsset<Sprite>("Hysteria", MainBundle);
 

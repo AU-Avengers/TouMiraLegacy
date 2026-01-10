@@ -71,7 +71,13 @@ public static class LegacyCrewAssets
 
     public static LoadableAsset<Sprite> BlockSprite { get; } =
         new LoadableBundleAsset<Sprite>("Block", LegacyAssets.MainBundle);
+    
+    public static LoadableAsset<Sprite> RewindSprite { get; } =
+        new LoadableBundleAsset<Sprite>("Rewind", LegacyAssets.MainBundle);
 
     public static LoadableAsset<Sprite> Transport { get; } =
         new LoadableBundleAsset<Sprite>("Transport", LegacyAssets.MainBundle);
+
+    public static LoadableAsset<Sprite> DeployCamSprite { get; } =
+        new LoadableBundleAsset<Sprite>("CreateCam", LegacyAssets.MainBundle);
 }

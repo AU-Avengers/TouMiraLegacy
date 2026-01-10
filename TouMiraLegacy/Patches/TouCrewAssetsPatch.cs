@@ -202,11 +202,27 @@ public static class TouCrewAssetsPatch
         return false;
     }
 
+    [HarmonyPatch(typeof(TouCrewAssets), nameof(TouCrewAssets.RewindSprite), MethodType.Getter)]
+    [HarmonyPrefix]
+    public static bool RewindSprite(ref LoadableAsset<Sprite> __result)
+    {
+        __result = LegacyCrewAssets.RewindSprite;
+        return false;
+    }
+
     [HarmonyPatch(typeof(TouCrewAssets), nameof(TouCrewAssets.Transport), MethodType.Getter)]
     [HarmonyPrefix]
     public static bool Transport(ref LoadableAsset<Sprite> __result)
     {
         __result = LegacyCrewAssets.Transport;
+        return false;
+    }
+
+    [HarmonyPatch(typeof(TouCrewAssets), nameof(TouCrewAssets.DeployCamSprite), MethodType.Getter)]
+    [HarmonyPrefix]
+    public static bool DeployCamSprite(ref LoadableAsset<Sprite> __result)
+    {
+        __result = LegacyCrewAssets.DeployCamSprite;
         return false;
     }
 

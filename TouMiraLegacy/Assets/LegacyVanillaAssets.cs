@@ -17,10 +17,12 @@ public static class LegacyVanillaAssets
 
     // Security Systems
     public static LoadableAsset<Sprite> DoorlogSprite { get; } = new LoadableBundleAsset<Sprite>($"DoorlogButton{LangSuffix}", MainBundle);
-    public static LoadableAsset<Sprite> AdminSkeldSprite { get; } = new LoadableBundleAsset<Sprite>($"AdminSkeldButton{LangSuffix}", MainBundle);
-    public static LoadableAsset<Sprite> AdminMiraSprite { get; } = new LoadableBundleAsset<Sprite>($"AdminMiraButton{LangSuffix}", MainBundle);
-    public static LoadableAsset<Sprite> AdminPolusSprite { get; } = new LoadableBundleAsset<Sprite>($"AdminPolusButton{LangSuffix}", MainBundle);
-    public static LoadableAsset<Sprite> AdminAirshipSprite { get; } = new LoadableBundleAsset<Sprite>($"AdminAirshipButton{LangSuffix}", MainBundle);
+    public static LoadableAsset<Sprite> VitalsSprite { get; } = new LoadableBundleAsset<Sprite>($"Vitals{LangSuffix}", MainBundle);
+    public static LoadableAsset<Sprite> SecuritySprite { get; } = new LoadableBundleAsset<Sprite>($"Security{LangSuffix}", MainBundle);
+    public static LoadableAsset<Sprite> AdminSkeldSprite { get; } = new LoadableBundleAsset<Sprite>($"AdminButtonSkeld{LangSuffix}", MainBundle);
+    public static LoadableAsset<Sprite> AdminMiraSprite { get; } = new LoadableBundleAsset<Sprite>($"AdminButtonMira{LangSuffix}", MainBundle);
+    public static LoadableAsset<Sprite> AdminPolusSprite { get; } = new LoadableBundleAsset<Sprite>($"AdminButtonPolus{LangSuffix}", MainBundle);
+    public static LoadableAsset<Sprite> AdminAirshipSprite { get; } = new LoadableBundleAsset<Sprite>($"AdminButtonAirship{LangSuffix}", MainBundle);
 
     // Other UI
     public static LoadableAsset<Sprite> StartSprite { get; } = new LoadableBundleAsset<Sprite>($"Start{LangSuffix}", MainBundle);
