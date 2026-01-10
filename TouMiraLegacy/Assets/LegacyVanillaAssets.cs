@@ -13,6 +13,7 @@ public static class LegacyVanillaAssets
     public static LoadableAsset<Sprite> SabotageSprite { get; } = new LoadableBundleAsset<Sprite>($"SabotageButton{LangSuffix}", MainBundle);
     public static LoadableAsset<Sprite> VentSprite { get; } = new LoadableBundleAsset<Sprite>($"VentButton{LangSuffix}", MainBundle);
     public static LoadableAsset<Sprite> UseSprite { get; } = new LoadableBundleAsset<Sprite>($"UseButton{LangSuffix}", MainBundle);
+    public static LoadableAsset<Sprite> PetSprite { get; } = new LoadableBundleAsset<Sprite>($"PetButton{LangSuffix}", MainBundle);
     public static LoadableAsset<Sprite> CustomizeSprite { get; } = new LoadableBundleAsset<Sprite>($"CustomizeButton{LangSuffix}", MainBundle);
 
     // Security Systems
