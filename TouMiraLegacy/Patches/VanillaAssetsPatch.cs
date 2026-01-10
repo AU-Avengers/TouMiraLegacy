@@ -131,8 +131,18 @@ public static class VanillaAssetsPatch
             case ImageNames.OptionsButton:
                 sprite = LegacyVanillaAssets.CustomizeSprite.LoadAsset();
                 break;
+            case ImageNames.MIRAAdminButton:
+                sprite = LegacyVanillaAssets.AdminMiraSprite.LoadAsset();
+                break;
+            case ImageNames.PolusAdminButton:
+                sprite = LegacyVanillaAssets.AdminPolusSprite.LoadAsset();
+                break;
+            case ImageNames.AirshipAdminButton:
+                sprite = LegacyVanillaAssets.AdminAirshipSprite.LoadAsset();
+                break;
             case ImageNames.AdminMapButton:
-                switch (MiscUtils.GetCurrentMap)
+                sprite = LegacyVanillaAssets.AdminSkeldSprite.LoadAsset();
+                /*switch (MiscUtils.GetCurrentMap)
                 {
                     case ExpandedMapNames.Skeld or ExpandedMapNames.Dleks:
                         sprite = LegacyVanillaAssets.AdminSkeldSprite.LoadAsset();
@@ -146,7 +156,7 @@ public static class VanillaAssetsPatch
                     case ExpandedMapNames.Airship:
                         sprite = LegacyVanillaAssets.AdminAirshipSprite.LoadAsset();
                         break;
-                }
+                }*/
                 break;
             /*case ImageNames.PlayAgainButton:
                 sprite = LegacyVanillaAssets.PlayAgainSprite.LoadAsset();
