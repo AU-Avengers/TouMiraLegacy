@@ -9,7 +9,7 @@ public static class LegacyAssets
     private const string ShortPath = "TouMiraLegacy.Resources";
 
     public static readonly AssetBundle MainBundle = AssetBundleManager.Load("legacy-assets");
-    public static LoadableAsset<Sprite> Banner { get; } = new LoadableResourceAsset($"{ShortPath}.Banner.png", 36f);
+    public static LoadableAsset<Sprite> Banner { get; } = new LoadableResourceAsset($"{ShortPath}.Banner.png", 34f);
     public static LoadableAsset<Sprite> BroadcastSprite { get; } =
         new LoadableBundleAsset<Sprite>("Detect", MainBundle);
 
