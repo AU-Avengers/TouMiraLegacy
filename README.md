@@ -2,8 +2,8 @@
 <div align="center">
   <img src="./TouMiraLegacy/Resources/Banner.png" alt="Town of Us Mira"/>
   <p>Town Of Us Mira</p>
-  <a href="https://github.com/AU-Avengers/TOU-Mira/releases/"> <img alt="Latest Release" src="https://badgen.net/github/release/AU-Avengers/TouMiraLegacy?icon=github"></a>
-  <a href="https://github.com/AU-Avengers/TOU-Mira/releases"> <img alt="GitHub Downloads" src="https://img.shields.io/github/downloads/AU-Avengers/TouMiraLegacy/total"></a>
+  <a href="https://github.com/AU-Avengers/TouMiraLegacy/releases/"> <img alt="Latest Release" src="https://badgen.net/github/release/AU-Avengers/TouMiraLegacy?icon=github"></a>
+  <a href="https://github.com/AU-Avengers/TouMiraLegacy/releases"> <img alt="GitHub Downloads" src="https://img.shields.io/github/downloads/AU-Avengers/TouMiraLegacy/total"></a>
 </div>
 <br/>
 
