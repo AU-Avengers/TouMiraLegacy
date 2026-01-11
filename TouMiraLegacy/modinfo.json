@@ -1,0 +1,16 @@
+{
+  "Name": "TOU Mira: Legacy",
+  "Description": "A client-side extension mod for TOU Mira that changes assets to resemble TOUR and old Among Us.",
+  "Tags": [
+    "mods"
+  ],
+  "Icon": "TouMiraLegacy.Resources.LegacyIcon.png",
+  "License": "GPLv3",
+  "Authors": [
+    "Atony",
+    "bat-0002"
+  ],
+  "Links": {
+    "Source": "https://github.com/AU-Avengers/TouMiraLegacy"
+    }
+}

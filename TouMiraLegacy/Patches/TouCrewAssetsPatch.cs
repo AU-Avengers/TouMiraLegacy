@@ -203,6 +203,7 @@ public static class TouCrewAssetsPatch
     }
 
     [HarmonyPatch(typeof(TouCrewAssets), nameof(TouCrewAssets.RewindSprite), MethodType.Getter)]
+    [HarmonyPatch(typeof(TouCrewAssets), nameof(TouCrewAssets.RewindingSprite), MethodType.Getter)]
     [HarmonyPrefix]
     public static bool RewindSprite(ref LoadableAsset<Sprite> __result)
     {

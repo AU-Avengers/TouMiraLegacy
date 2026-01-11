@@ -18,26 +18,17 @@ namespace TouMiraLegacy;
 [BepInDependency(ReactorPlugin.Id)]
 [BepInDependency(MiraApiPlugin.Id)]
 [BepInDependency(TownOfUsPlugin.Id)]
-public partial class TouMiraLegacyPlugin : BasePlugin, IMiraPlugin
+public partial class TouMiraLegacyPlugin : BasePlugin
 {
     /// <summary>
     ///     Gets the specified Culture for string manipulations.
     /// </summary>
     public static CultureInfo Culture => TownOfUs.TownOfUsPlugin.Culture;
 
-    /// <inheritdoc />
-    public string OptionsTitleText => "";
-
     /// <summary>
     ///     Determines if the current build is a dev build or not. This will change certain visuals as well as always grab news locally to be up to date.
     /// </summary>
     public static bool IsDevBuild => true;
-
-    /// <inheritdoc />
-    public ConfigFile GetConfigFile()
-    {
-        return Config;
-    }
 
     public Harmony Harmony { get; } = new(Id);
 
