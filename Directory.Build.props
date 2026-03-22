@@ -10,10 +10,10 @@
 
         <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
 
-        <VersionPrefix>0.1.0</VersionPrefix>
+        <VersionPrefix>1.0.1</VersionPrefix>
         <VersionSuffix>dev</VersionSuffix>
 
-        <Authors>Atony</Authors>
+        <Authors>Atony, XtraCube</Authors>
         <Company>Among Us Avengers</Company>
         <RepositoryUrl>https://github.com/AU-Avengers/TouMiraLegacy</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
