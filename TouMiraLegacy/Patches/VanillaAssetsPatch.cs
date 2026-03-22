@@ -5,7 +5,6 @@ using TownOfUs.Buttons.Crewmate;
 using TownOfUs.Buttons.Impostor;
 using TownOfUs.Buttons.Modifiers;
 using TownOfUs.Buttons.Neutral;
-using TownOfUs.Utilities;
 
 namespace TouMiraLegacy.Patches;
 
@@ -17,6 +16,7 @@ public static class VanillaAssetsPatch
     [HarmonyPostfix]
     public static void PostLoadPatch(HudManager __instance)
     {
+        Debug("Applying vanilla assets patch...");
         var killBtn = __instance.KillButton;
         var reportBtn = __instance.ReportButton;
         var saboBtn = __instance.SabotageButton;
@@ -45,13 +45,10 @@ public static class VanillaAssetsPatch
         CustomButtonSingleton<HunterKillButton>.Instance.RemoveLabel();
         CustomButtonSingleton<SheriffShootButton>.Instance.RemoveLabel();
         CustomButtonSingleton<EngineerVentButton>.Instance.RemoveLabel();
-        CustomButtonSingleton<DetectiveInspectButton>.Instance.RemoveLabel();
-        CustomButtonSingleton<DetectiveExamineButton>.Instance.RemoveLabel();
         CustomButtonSingleton<WatchButton>.Instance.RemoveLabel();
         CustomButtonSingleton<OracleConfessButton>.Instance.RemoveLabel();
         CustomButtonSingleton<OracleBlessButton>.Instance.RemoveLabel();
         CustomButtonSingleton<SeerRevealButton>.Instance.RemoveLabel();
-        CustomButtonSingleton<TrackerTrackButton>.Instance.RemoveLabel();
         CustomButtonSingleton<TrapperTrapButton>.Instance.RemoveLabel();
         CustomButtonSingleton<CampButton>.Instance.RemoveLabel();
         CustomButtonSingleton<HunterStalkButton>.Instance.RemoveLabel();
@@ -109,6 +106,7 @@ public static class VanillaAssetsPatch
         CustomButtonSingleton<MinerPlaceVentButton>.Instance.RemoveLabel();
         CustomButtonSingleton<UndertakerDragDropButton>.Instance.RemoveLabel();
         CustomButtonSingleton<WarlockKillButton>.Instance.RemoveLabel();
+        Debug("Vanilla assets patch applied.");
     }
 
     [HarmonyPatch(typeof(UseButton), nameof(UseButton.SetFromSettings))]
