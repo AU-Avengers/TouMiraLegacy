@@ -45,10 +45,13 @@ public static class VanillaAssetsPatch
         CustomButtonSingleton<HunterKillButton>.Instance.RemoveLabel();
         CustomButtonSingleton<SheriffShootButton>.Instance.RemoveLabel();
         CustomButtonSingleton<EngineerVentButton>.Instance.RemoveLabel();
+        CustomButtonSingleton<ForensicExamineButton>.Instance.RemoveLabel();
+        CustomButtonSingleton<ForensicInspectButton>.Instance.RemoveLabel();
         CustomButtonSingleton<WatchButton>.Instance.RemoveLabel();
         CustomButtonSingleton<OracleConfessButton>.Instance.RemoveLabel();
         CustomButtonSingleton<OracleBlessButton>.Instance.RemoveLabel();
         CustomButtonSingleton<SeerRevealButton>.Instance.RemoveLabel();
+        CustomButtonSingleton<SonarTrackButton>.Instance.RemoveLabel();
         CustomButtonSingleton<TrapperTrapButton>.Instance.RemoveLabel();
         CustomButtonSingleton<CampButton>.Instance.RemoveLabel();
         CustomButtonSingleton<HunterStalkButton>.Instance.RemoveLabel();
