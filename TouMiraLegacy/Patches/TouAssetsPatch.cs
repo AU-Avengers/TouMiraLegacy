@@ -51,13 +51,13 @@ public static class TouAssetsPatch
         __result = TouAssets.BlankSprite;
         return false;
     }
-    [HarmonyPatch(typeof(TouAssets), nameof(TouAssets.Banner), MethodType.Getter)]
+    /*[HarmonyPatch(typeof(TouAssets), nameof(TouAssets.Banner), MethodType.Getter)]
     [HarmonyPrefix]
     public static bool Banner(ref LoadableAsset<Sprite> __result)
     {
         __result = LegacyAssets.Banner;
         return false;
-    }
+    }*/
 
     [HarmonyPatch(typeof(TouAssets), nameof(TouAssets.BroadcastSprite), MethodType.Getter)]
     [HarmonyPrefix]
